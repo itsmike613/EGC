@@ -10,7 +10,7 @@
 	<meta content="https://itsmike613.github.io/EGC/" property="og:url" />
 	<meta content="https://github.com/itsmike613/EGC/blob/main/Assets/Images/logo.png?raw=true" property="og:image" />
 	<meta content="#6610F2" data-react-helmet="true" name="theme-color" />
-	
+
 	<!-- Tab -->
 	<link rel="icon" type="image/x-icon" href="Assets/Images/logo.png">
 	<title>Exam Grade Calculation</title>
@@ -57,9 +57,10 @@
 </head>
 
 <body>
-	<div class="calc-container mt-4">
+	<div class="mt-4">
 		<h1 class="fw-bold">Exam Grade Calculation</h1>
 		<p class="text-muted mb-4">Determine the grade you need on the final exam to achieve X as your final grade.</p>
+		
 		<form id="gradeForm">
 			<div class="mb-3">
 				<label for="quarteroneinput" class="form-label">Quarter 1 grade <span class="text-danger">*</span></label>
@@ -145,9 +146,9 @@
 
 		</footer>
 	</div>
-	
+
 	<script>
-		document.getElementById('gradeForm').addEventListener('submit', function(event) {
+		document.getElementById('gradeForm').addEventListener('submit', function (event) {
 			event.preventDefault();
 			const quarterOne = parseFloat(document.getElementById('quarteroneinput').value);
 			const quarterTwo = parseFloat(document.getElementById('quartertwoinput').value);
